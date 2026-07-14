@@ -83,13 +83,13 @@ a{color:inherit;text-decoration:none}
 /* contact buttons */
 .rbtn{display:flex;flex-direction:column;align-items:center;gap:12px}
 .rbtn .circ{width:74px;height:74px;border-radius:50%;display:grid;place-items:center;
-  background:rgba(11,11,12,.4);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  background:rgba(11,11,12,.4);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.28);
   transition:transform .35s var(--ease),box-shadow .35s var(--ease)}
 .rbtn .circ svg{width:30px;height:30px}
 .rbtn:active .circ{transform:scale(.93)}
-.rbtn.wa .circ{box-shadow:0 16px 36px -12px rgba(37,211,102,.6),0 0 22px -4px rgba(37,211,102,.45)}
+.rbtn.wa .circ{border-color:rgba(37,211,102,.6);box-shadow:0 16px 36px -12px rgba(37,211,102,.6),0 0 22px -4px rgba(37,211,102,.45)}
 .rbtn.wa svg{color:#41e383}
-.rbtn.call .circ{box-shadow:0 16px 36px -12px rgba(201,162,74,.6),0 0 22px -4px rgba(201,162,74,.45)}
+.rbtn.call .circ{border-color:rgba(201,162,74,.75);box-shadow:0 16px 36px -12px rgba(201,162,74,.6),0 0 22px -4px rgba(201,162,74,.45)}
 .rbtn.call svg{color:var(--gold-2)}
 .rbtn span{font-size:12px;font-weight:500;letter-spacing:.12em}
 .rbtn.wa span{color:#fff}.rbtn.call span{color:var(--gold-2)}
@@ -166,7 +166,7 @@ main{position:relative;z-index:2;background:transparent}
   background:linear-gradient(var(--gold-2),var(--gold),var(--gold-3));z-index:6;transform:translateX(-50%)}
 .ba .knob{position:absolute;top:50%;left:var(--x,50%);z-index:7;width:52px;height:52px;border-radius:50%;
   transform:translate(-50%,-50%);background:rgba(11,11,12,.5);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
-  display:grid;place-items:center;cursor:ew-resize;
+  border:1px solid rgba(201,162,74,.75);display:grid;place-items:center;cursor:ew-resize;
   box-shadow:0 10px 26px -6px rgba(0,0,0,.6),0 0 20px -4px rgba(201,162,74,.55)}
 .ba .knob svg{width:24px;height:24px;color:var(--gold-2)}
 .ba-note{text-align:center;color:rgba(246,243,236,.72);font-size:13px;margin:14px auto 0;text-shadow:0 1px 12px rgba(0,0,0,.6)}
